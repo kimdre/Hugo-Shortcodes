@@ -1,5 +1,7 @@
 # Post Archive in Hugo
 
+Add an Archive of your Posts to your Website
+
 ## Install
 
 1. Add the shortcode file `shortcodes/archive.html` to your project > `layouts/shortcodes`
@@ -18,7 +20,7 @@ To reach your Archive you can add a new menu entry that links to it:
 ```
 
 Add a summary (description) to each Post:
-```yaml
+```toml
 +++
 ...
 summary = "This is a Test Page for this Usage example"
@@ -28,4 +30,4 @@ summary = "This is a Test Page for this Usage example"
 
 ## Preview
 
-![Highlight Boxes in Hugo](post_archive.png)
+![Post Archive in Hugo](post_archive.png)

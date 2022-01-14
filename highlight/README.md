@@ -1,5 +1,7 @@
 # Highlight boxes in Hugo
 
+Add Highlight Boxes to your Website
+
 ## Install
 
 1. Add the shortcode files to `layouts/shortcodes`
