@@ -1,6 +1,6 @@
-# Hugo-Shortcodes
+# Hugo Shortcodes
 
-Useful Hugo Shortcodes
+A Collection of useful Hugo Shortcodes
 
 - ## [Highlight Boxes](highlight)
     ![Example Highlight Boxes in Hugo](/highlight/highlights.png)
