@@ -1,4 +1,6 @@
-# Highlight boxes in Hugo
+# Table of Contents in Hugo
+
+Add a automatically generated Table of Contents to any Page/Post on your Website 
 
 ## Install
 
