@@ -7,7 +7,10 @@ Add automatically generated Search Engine Optimization to your Website
 1. Add this code to your `<head></head>` structure (e.g in `layouts/_default/baseof.html`):
    
    ```html
-   <!-- Site Indexing toggled by key value of `private` in Page/Post Settings -->
+   <!-- 
+    Site Indexing toggled by key value of `private` in Page/Post Settings 
+    404.html and 404.php are noindex, nofollow by default
+    -->
     <meta name="robots" content=
     {{- if or (.Params.private) (in (string .Permalink) "404.html") (in (string .Permalink) "404.php") -}}
         "noindex, nofollow"

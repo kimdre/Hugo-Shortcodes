@@ -1,4 +1,7 @@
-<!-- Site Indexing toggled by key value of `private` in Page/Post Settings -->
+<!-- 
+    Site Indexing toggled by key value of `private` in Page/Post Settings 
+    404.html and 404.php are noindex, nofollow by default
+-->
 <meta name="robots" content=
 {{- if or (.Params.private) (in (string .Permalink) "404.html") (in (string .Permalink) "404.php") -}}
     "noindex, nofollow"
