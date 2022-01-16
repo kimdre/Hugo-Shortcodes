@@ -3,7 +3,8 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 
-## Add this key with value 'false' for indexing by search engines enabled by default
-private: false
+# Add the lines below to your default.md
+tags: ["Enter", "Default", "Keywords", "Here"]
+private: false # Add this key with value 'false' so search engine indexing is enabled by default
 ---
 
