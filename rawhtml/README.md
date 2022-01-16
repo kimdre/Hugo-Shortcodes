@@ -8,7 +8,7 @@ Insert raw HTML Code anywhere
 
 ## Usage
 
-```hugo
+```html
 {{< rawhtml >}}
     <h1>your html code here</h1>
     <p style="color: yellow;">Example HTML</p>
