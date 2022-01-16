@@ -18,7 +18,7 @@ A Collection of useful Hugo Shortcodes
     
     Insert raw HTML Code anywhere
 
-    ```html
+    ```hugo
     {{< rawhtml >}}
         <h1>your html code here</h1>
         <p style="color: yellow;">Example HTML</p>
