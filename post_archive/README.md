@@ -6,6 +6,10 @@ Add an Archive of your Posts to your Website
 
 1. Add the shortcode file `shortcodes/archive.html` to your project > `layouts/shortcodes`
 2. Add `content/archive.md` to your project's `/content` directory 
+3. Add the default key/value to your `archetypes/default.md`
+   ```yaml
+   summary: "Summary of {{ replace .Name "-" " " | title }}"
+   ```
 
 ## Usage
 
@@ -19,7 +23,7 @@ To reach your Archive you can add a new menu entry that links to it:
         url = "/about/"
 ```
 
-Add a summary (description) to each Post:
+Add a summary (description) to a Post:
 ```toml
 +++
 ...
