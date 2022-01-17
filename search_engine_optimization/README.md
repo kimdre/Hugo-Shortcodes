@@ -21,14 +21,17 @@ Add automatically generated Search Engine Optimization to your Website
     <!-- Meta Keywords/Tags for Users to search for in Search Engines -->
     <meta name="keywords" content="
     {{- with .Params.tags }}
-        {{- range . -}}
+        {{- range $key, $item := . -}}
+            {{- if ne $key 0 -}}
+            ,
+            {{- end -}}
             {{ with $.Site.GetPage (printf "/%s/%s" "tags" . ) }}
-                {{- .Title -}},
+                {{- .Title -}}
             {{- end }}
-            {{- end }}
-        {{- else -}}
-            Tutorials, Tips, Linux, Bash, Docker
-    {{- end }}" />    
+        {{- end }}
+    {{- else -}}
+        Default, Keywords, That, Describe, Your, Page
+    {{- end }}" />   
 
     <!-- Canonical URLs -->
     <link rel="canonical" href="{{ .Permalink }}" />
